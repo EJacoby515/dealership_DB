@@ -12,7 +12,7 @@ SELECT add_sales_ppl (1,'Ethan','Florito')
 
 SELECT add_sales_ppl (2,'Tyler','Nickels')
 
-SELECT  ADD_sales_ppl (3,'Ariel','Jacoby')
+SELECT  add_sales_ppl (3,'Ariel','Jacoby')
 
 SELECT * FROM sales_person 
 
@@ -106,15 +106,14 @@ END
 $MAIN$
 LANGUAGE plpgsql;
 
-SELECT add_service_rec (00001,'t-054-010-01',001,'2024-01-05','oil change_','oil (7quarts), oil filter_, clean  up')
+SELECT add_service_rec (1,'t-054-010-01',001,'2024-01-05','oil change_','oil (7quarts), oil filter_, clean  up')
 
-SELECT add_service_rec (00002, 't-11-02-2022', 002, '2024-01-10','alignment','alignment rack')
+SELECT add_service_rec (2, 't-11-02-2022', 002, '2024-01-10','alignment','alignment rack')
 
-SELECT add_service_rec (000003, 'a-002-001-01', 003, '2024-01-09','clutch replacment','clutch, pressure plate, throw out bearing')
+SELECT add_service_rec (3, 'a-002-001-01', 003, '2024-01-09','clutch replacment','clutch, pressure plate, throw out bearing')
 
 
 SELECT * FROM service_record
 
 
-
-);
+)
